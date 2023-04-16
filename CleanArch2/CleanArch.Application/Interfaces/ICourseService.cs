@@ -9,6 +9,9 @@ namespace CleanArch.Application.Interfaces
 {
     public interface ICourseService
     {
-        IEnumerable<CourseViewModel> GetCourses();
+        //We donot need this one because CourseViewModel is already returning the Enumerable list of Courses 
+        //  IEnumerable<CourseViewModel> GetCourses();
+
+        CourseViewModel GetCourses();
     }
 }
