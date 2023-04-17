@@ -18,7 +18,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDbContext<UniversityDBContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("UniversityDBConnection")));
 
-RegisterServices(builder.Services);
+RegisterServices(builder.Services); 
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
